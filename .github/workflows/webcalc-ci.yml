@@ -1,4 +1,5 @@
-name: WebCalcCI
+name: Python application
+
 on:
   push:
     branches: [ "main" ]
@@ -11,9 +12,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./webcalc
 
     steps:
     - uses: actions/checkout@v4
